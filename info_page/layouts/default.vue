@@ -11,7 +11,7 @@
         <nuxt-link style="text-decoration: none" to="/">
           <img
             src="https://starnetscan.com/images/k_logo.png"
-            style="max-height: 120px"
+            style="max-height: 70px"
             alt="starnet nft"
           />
         </nuxt-link>

@@ -16,6 +16,23 @@
           />
         </nuxt-link>
       </v-toolbar-title>
+
+      <div class="social-btns">
+        <v-btn
+          class="secondary ma-1 white--text"
+          outlined
+          @click="goToUrl('/')"
+        >
+          HOME
+        </v-btn>
+        <v-btn
+          class="primary ma-1 white--text"
+          outlined
+          @click="goToUrl('/dev/verifying')"
+        >
+          Developer Info
+        </v-btn>
+      </div>
     </v-app-bar>
 
     <v-main>

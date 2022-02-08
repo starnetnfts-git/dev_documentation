@@ -28,11 +28,15 @@
             following buttons and accepting the prompt in metamask
             <br />
             <container>
-              <v-btn class="mt-3 mb-3 primary" @click="connectWallet()">{{
-                connectWalletText
-              }}</v-btn>
               <v-btn
-                class="mt-3 mb-3 primary"
+                class="mt-3 mb-3 primary white--text"
+                outlined
+                @click="connectWallet()"
+                >{{ connectWalletText }}</v-btn
+              >
+              <v-btn
+                class="mt-3 mb-3 primary white--text"
+                outlined
                 @click="addStarentNFTChainToMetamask()"
                 >2. ADD STAR NET NFT TO METAMASK</v-btn
               >

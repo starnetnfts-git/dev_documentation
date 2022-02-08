@@ -25,7 +25,7 @@ func init() {
 	RootCmd.AddCommand(cleanupCmd)
 }
 
-// Cleanup returns the unspent eth/erc20
+// CleanUp returns the unspent eth/erc20
 func CleanUp() {
 
 	jsonFile, err := os.Open("./test_accounts.json")
@@ -49,7 +49,7 @@ func CleanUp() {
 
 	fmt.Printf("Parent Address %s\n", parentAddress)
 
-	client1, err := ethereum.InitEthClient(os.Getenv("RPC_URL"))
+	client1, err := ethereum.InitEthClient(os.Getenv("RPC_URL1"))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -75,7 +75,7 @@ func CleanUp() {
 
 		if balance.String() != "0" {
 
-			err = sendEthToAddress(client1, parentAddress, balance.Sub(balance, big.NewInt(10000000000000000)).String(), tAddress[1])
+			err = sendEthToAddress(client1, parentAddress, balance.Sub(balance, big.NewInt(21000000000000)).String(), tAddress[1])
 			if err != nil {
 				log.Println(err)
 			}

@@ -1,5 +1,10 @@
 # Star Net NFT Blockchain Benchmarks
 
+### TL/DR;
+
+With a firewall, max per IP is 60 TPS
+Without firewall, max per IP is 
+
 ### Testing Procedures
 
 Basically there are two main parameters you can tweak on:
@@ -9,9 +14,9 @@ big discussion for someone that has time: https://github.com/ethereum/go-ethereu
 - block time (how fast to produce blocks?)
 - block gas limit (how much to include in a block?)
 
-#### Propagation time can't be transalated directly into TPS, because
+#### Propagation time can't be translated directly into TPS, because
 
-TPS depends mainly on gas limit and blocktime. But it can affect syncronization in the network, degrading the TPS that
+TPS depends mainly on gas limit and blocktime. But it can affect synchronization in the network, degrading the TPS that
 can be calculated theoretically from the configuration of the network.
 
 ## Important info
@@ -33,7 +38,7 @@ them in the new block, and once the epoch is finished, it broadcasts the block t
 the sealers accepted it, the block can (finally) be considered as valid. In case that the leader delays in submitting
 the block, some back-up sealers can take its place and propose another block instead. The time between two consecutive
 blocks is called block time. Despite the fact that in PoA networks theoretical block time is fixed by configuration, it
-can fluctuates due to synchronization and network delays. That is why it is interesting to measure real block times
+can fluctuate due to synchronization and network delays. That is why it is interesting to measure real block times
 given other varying blockchain parameters, e.g. number of sealers and Gas Limit (which determines the block size). The
 block time configuration parameter can be used to set the maximum network throughput, as evaluated in Gas Limit section.
 
@@ -53,14 +58,14 @@ blockchain block time.
 ### So what is the optimal gas limit ?
 
 According to this
-reaserch: https://www.researchgate.net/publication/343924396_Performance_Evaluation_of_Private_Ethereum_Networks
-Additionally, we can conclude that the maximum block gas limitshould be between 0x8000000 and 0x10000000.
+research: https://www.researchgate.net/publication/343924396_Performance_Evaluation_of_Private_Ethereum_Networks
+Additionally, we can conclude that the maximum block gas limits hould be between 0x8000000 and 0x10000000.
 
 ## 1 second time. 3 sealers
 
 ---
 
-- wallets stop functioning correctly (metamask). errors like transactios stuck in pending and insuficient funds for
+- wallets stop functioning correctly (metamask). errors like transactions stuck in pending and insufficient funds for
   transaction (even thought they are there)
 
 Conclusion: while sealers appear to produce blocks correctly, rpc works, etc. the wallets malfunction for some reason.
@@ -96,9 +101,9 @@ Sealer Nodes: 2 CPU, 2GB RAM, SSD HDD, Needs Better Network Connection than a RP
 
 defaults:
 
-block gas limit of 4,700,000 running on 5 second block intervals and we can support 44 transactions per second at 21,000 gas per transaction
+block gas limit of 4,700,000 running on 5-second block intervals and we can support 44 transactions per second at 21,000 gas per transaction
 
-The Rinkeby network has a current gas limit of around 7,000,000 per block and roughly 15 second block intervals, which equates to 22 transactions per second at the same 21,000 gas price per transaction
+The Rinkeby network has a current gas limit of around 7,000,000 per block and roughly 15-second block intervals, which equates to 22 transactions per second at the same 21,000 gas price per transaction
 
 ### Final recommendation
 
@@ -112,7 +117,7 @@ what happens if the RPC nodes are full and can't buffer more ?
 
 - wallet should retry them
 
-what happens if both RPC nodes are full continiously
+what happens if both RPC nodes are full continuously
 
 - attacker should run out of ETH
 - the firewall before the official RPCs will block the IPs that flood the network

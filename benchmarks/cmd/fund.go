@@ -53,6 +53,7 @@ func fundTestAddresses() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	log.Printf("loaded %d test accounts", len(testAccounts))
 
 	parentAddress = os.Getenv("PARENT_ADDRESS")
 	parentAddressPrivateKey = os.Getenv("PARENT_PRIVATE_KEY")
@@ -77,18 +78,21 @@ func fundTestAddresses() {
 		log.Fatal("please fund the parent account with lots of eth")
 	}
 
-	for i := 0; i < 10000; i++ {
+	totalAccounts := 1000
+	weiToSend := "300000000000000" // 0.0003
+
+	for i := 0; i < totalAccounts; i++ {
 		tAddress := testAccounts[i]
 
 		fmt.Printf("Current Index %d / %d\n", i, len(testAccounts))
-		err := sendEthToAddress(client1, tAddress[0], "10000000000000000000", parentAddressPrivateKey) // 10 ETH
+		err := sendEthToAddress(client1, tAddress[0], weiToSend, parentAddressPrivateKey) // 0.0001
 		if err != nil {
 			log.Fatal(err)
 		}
 	}
 
-	// verifying the balances
-	for i := 0; i < len(testAccounts); i++ {
+	// verifying some the balances
+	for i := 0; i < 10; i=i+10 {
 		tAddress := testAccounts[i]
 		balance, err := ethereum.GetWeiBalance(tAddress[0], ethereum.Client)
 		if err != nil {
@@ -99,11 +103,7 @@ func fundTestAddresses() {
 		ethValue := new(big.Float).Quo(fbalance, big.NewFloat(math.Pow10(18)))
 		fmt.Printf("Account %s has %s ETH\n", tAddress[0], ethValue.String())
 		if ethValue.String() == "0" {
-			fmt.Println("this should never happen but we got an address with 0 ETH! re-funding it now")
-			err := sendEthToAddress(client1, tAddress[0], "1000000000000000000000", parentAddressPrivateKey)
-			if err != nil {
-				log.Fatal(err)
-			}
+			fmt.Println("this should never happen but we got an address with 0 ETH")
 		}
 	}
 
@@ -135,7 +135,7 @@ func sendEthToAddress(client *ethclient.Client, toAddress string, amountInWei st
 		return fmt.Errorf("wrong wei amount")
 	}
 
-	gasLimit := uint64(55723) // in units
+	gasLimit := uint64(21000) // in units
 	gasPriceWei, _ := strconv.Atoi(os.Getenv("GAS_PRICE_WEI"))
 	gasPrice := big.NewInt(int64(gasPriceWei))
 

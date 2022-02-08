@@ -28,19 +28,23 @@
           </p>
 
           <p class="mt-5 body">
-            Try adding automatically by clicking the following button and
+            Try adding automatically by clicking the following buttons and
             accepting the prompt in metamask
             <br />
+            <v-btn class="mt-3 mb-3 primary" @click="connectWallet()">{{
+              connectWalletText
+            }}</v-btn>
             <v-btn
               class="mt-3 mb-3 primary"
               @click="addStarentNFTChainToMetamask()"
-              >ADD STARNETNFT TO METAMASK</v-btn
+              >2. AND ADD STARNETNFT TO METAMASK</v-btn
             >
           </p>
 
           <p class="mt-5 body">
-            Manual way is to open MetaMask and click the network dropdown menu.
-            Click Add Network button and add the following details
+            You can also connect manually. Open MetaMask and click the network
+            dropdown menu. Click Add Network button and add the following
+            details
           </p>
 
           <v-card class="ma-5 pa-5">
@@ -154,11 +158,20 @@ export default {
       errorText: '',
       dialogError: false,
       walletAddress: null,
+      connectWalletText: '1. CONNECT WALLET',
       successText: '',
     }
   },
   async mounted() {},
   methods: {
+    async connectWallet() {
+      this.ethers = new ethers.providers.Web3Provider(window.ethereum, 'any')
+      await this.ethers.send('eth_requestAccounts', [])
+
+      this.signer = this.ethers.getSigner()
+      this.account = await this.signer.getAddress()
+      this.connectWalletText = 'CONNECTED'
+    },
     async addStarentNFTChainToMetamask() {
       console.log('adding starnetnft to metamask...')
       if (window.ethereum) {

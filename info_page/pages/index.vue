@@ -1,24 +1,20 @@
 <template>
   <v-container>
-    <v-layout
-      align-center
-      justify-center
-      class="ma-5 pa-5 metamask-info-template"
-    >
+    <v-layout align-center justify-center class="metamask-info-template">
       <v-flex xs12 sm8 md6 class="metamask-info-template__row">
         <div>
           <p class="display-1">
-            <span class="underline">StarnetNFT</span> blockchain
+            <span class="underline">Star Net NFT</span> Blockchain
           </p>
 
           <p class="mt-5 title">Connect to the blockchain</p>
           <p class="body">
-            Interacting with the StarnetNFT blockchain requires a compatible
+            Interacting with the Star Net NFT blockchain requires a compatible
             crypto wallet such as
             <a target="_blank" href="https://metamask.io/">MetaMask</a>.
-            However, MetaMask doesn’t have StarnetNFT added as a network by
-            default. Setting up your browser wallet to connect to StarnetNFT is
-            simple and can be done in just a few minutes.
+            However, MetaMask doesn’t have Star Net NFT added as a network by
+            default. Setting up your browser wallet to connect to Star Net NFT
+            is simple and can be done in just a few minutes.
           </p>
           <p class="mt-5 body">
             <a target="_blank" href="https://metamask.io/">MetaMask</a> is
@@ -31,14 +27,16 @@
             First unlock metamask, then try adding automatically by clicking the
             following buttons and accepting the prompt in metamask
             <br />
-            <v-btn class="mt-3 mb-3 primary" @click="connectWallet()">{{
-              connectWalletText
-            }}</v-btn>
-            <v-btn
-              class="mt-3 mb-3 primary"
-              @click="addStarentNFTChainToMetamask()"
-              >2. AND ADD STARNETNFT TO METAMASK</v-btn
-            >
+            <container>
+              <v-btn class="mt-3 mb-3 primary" @click="connectWallet()">{{
+                connectWalletText
+              }}</v-btn>
+              <v-btn
+                class="mt-3 mb-3 primary"
+                @click="addStarentNFTChainToMetamask()"
+                >2. ADD STAR NET NFT TO METAMASK</v-btn
+              >
+            </container>
           </p>
 
           <p class="mt-5 body">
@@ -80,7 +78,7 @@
           </p>
 
           <p class="ma-5 body-1">
-            With StarnetNFT set up in MetaMask, you’re free to start making
+            With Star Net NFT set up in MetaMask, you’re free to start making
             transactions, collecting NFTs interacting with DeFi DApps, and
             managing your crypto.
           </p>

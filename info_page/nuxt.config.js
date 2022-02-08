@@ -15,15 +15,15 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: 'StartNet NFT Info Page',
-    title: 'StartNet NFT Info Page',
+    titleTemplate: 'Start Net NFT Info Page',
+    title: 'Start Net NFT Info Page',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'StartNet NFT Info Page',
+        content: 'Start Net NFT Info Page',
       },
     ],
     link: [

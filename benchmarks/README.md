@@ -2,8 +2,10 @@
 
 ### TL/DR;
 
-With a firewall, max per IP is 60 TPS
-Without firewall, max per IP is 
+With a firewall, max per IP is ~60 TPS
+Without firewall, max per IP is ~700 TPS
+
+Reads: maximum per set connections in RPC config
 
 ### Testing Procedures
 

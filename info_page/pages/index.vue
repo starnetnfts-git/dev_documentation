@@ -28,8 +28,8 @@
           </p>
 
           <p class="mt-5 body">
-            Try adding automatically by clicking the following buttons and
-            accepting the prompt in metamask
+            First unlock metamask, then try adding automatically by clicking the
+            following buttons and accepting the prompt in metamask
             <br />
             <v-btn class="mt-3 mb-3 primary" @click="connectWallet()">{{
               connectWalletText

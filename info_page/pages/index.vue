@@ -45,20 +45,16 @@
             details
           </p>
 
-          <v-card class="ma-5 pa-5">
+          <v-card class="ma-5">
             <v-card-title>
               <p>
                 <span style="font-weight: bold">Network Name:</span> Star Net
-              </p>
-              <br />
-              <p>
+                <br />
                 <span style="font-weight: bold">New RPC URL:</span>
                 https://rpc1.starnetnft.com
-              </p>
-              <br />
-              <p><span style="font-weight: bold">Chain ID:</span> 4444</p>
-              <br />
-              <p>
+                <br />
+                <span style="font-weight: bold">Chain ID:</span> 4444
+                <br />
                 <span style="font-weight: bold">Block Explorer URL:</span>
                 https://starnetscan.com
               </p>

@@ -51,19 +51,10 @@ func fireItUp() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	//client1b, err := ethereum.InitEthClient(os.Getenv("RPC_URL2"))
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
 	//client2, err := ethereum.InitEthClient(os.Getenv("RPC_URL3"))
 	//if err != nil {
 	//	log.Fatal(err)
 	//}
-	//client2b, err := ethereum.InitEthClient(os.Getenv("RPC_URL4"))
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
-
 	fundedAccounts := 1000 //len(testAccounts)-2
 
 	go func() {
@@ -82,50 +73,5 @@ func fireItUp() {
 		}
 	}()
 
-	//go func() {
-	//	for i := 0; i < 2; i++ {
-	//		for i := 0; i < fundedAccounts; i++ {
-	//			go func(idx int) {
-	//				fmt.Printf("starting index %d\n", idx)
-	//				err := sendEthToAddress(client1b, testAccounts[idx][0], "100000", testAccounts[idx+1][1])
-	//				if err != nil {
-	//					fmt.Println(err)
-	//				}
-	//			}(i)
-	//		}
-	//		time.Sleep(200 * time.Millisecond)
-	//	}
-	//}()
-	//
-	//go func() {
-	//	for i := 0; i < 2; i++ {
-	//		for i := 0; i < fundedAccounts; i++ {
-	//			go func(idx int) {
-	//				fmt.Printf("starting index %d\n", idx)
-	//				err := sendEthToAddress(client2, testAccounts[idx][0], "100000", testAccounts[idx+1][1])
-	//				if err != nil {
-	//					fmt.Println(err)
-	//				}
-	//			}(i)
-	//		}
-	//		time.Sleep(200 * time.Millisecond)
-	//	}
-	//}()
-	//
-	//go func() {
-	//	for i := 0; i < 2; i++ {
-	//		for i := 0; i < fundedAccounts; i++ {
-	//			go func(idx int) {
-	//				fmt.Printf("starting index %d\n", idx)
-	//				err := sendEthToAddress(client2b, testAccounts[idx][0], "100000", testAccounts[idx+1][1])
-	//				if err != nil {
-	//					fmt.Println(err)
-	//				}
-	//			}(i)
-	//		}
-	//		time.Sleep(200 * time.Millisecond)
-	//	}
-	//}()
-
-	time.Sleep(20*time.Second)
+	time.Sleep(20 * time.Second)
 }

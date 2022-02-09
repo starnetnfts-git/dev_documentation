@@ -12,6 +12,6 @@ func main() {
 	if err != nil {
 		log.Panic("error loading .env file")
 	}
-	fmt.Println("EthBench Started .....")
+	fmt.Println("EthBench v.0.1 Started .....")
 	cmd.Execute()
 }

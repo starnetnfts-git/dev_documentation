@@ -120,7 +120,6 @@ func erc721FireItUp() {
 		}
 	}()
 
-
 	time.Sleep(20 * time.Second)
 }
 

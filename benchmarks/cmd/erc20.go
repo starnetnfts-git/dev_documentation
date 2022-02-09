@@ -54,10 +54,6 @@ func erc20FireItUp() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	//client2b, err := ethereum.InitEthClient(os.Getenv("RPC_URL4"))
-	//if err != nil {
-	//	log.Fatal(err)
-	//}
 
 	totalTestAccounts := 1000 //len(testAccounts)-2
 	go func() {
@@ -86,7 +82,6 @@ func erc20FireItUp() {
 					fbalance.SetString(bal.String())
 					decimalValue := new(big.Float).Quo(fbalance, big.NewFloat(math.Pow10(18)))
 					log.Printf("token balance %f", decimalValue)
-
 
 				}(i)
 			}
@@ -121,57 +116,11 @@ func erc20FireItUp() {
 					decimalValue := new(big.Float).Quo(fbalance, big.NewFloat(math.Pow10(18)))
 					log.Printf("token balance %f", decimalValue)
 
-
 				}(i)
 			}
 			time.Sleep(3 * time.Second)
 		}
 	}()
 
-	//go func() {
-	//	for i := 0; i < 2; i++ {
-	//		for i := 0; i < fundedAccounts; i++ {
-	//			go func(idx int) {
-	//				fmt.Printf("starting index %d\n", idx)
-	//				err := sendEthToAddress(client1b, testAccounts[idx][0], "100000", testAccounts[idx+1][1])
-	//				if err != nil {
-	//					fmt.Println(err)
-	//				}
-	//			}(i)
-	//		}
-	//		time.Sleep(200 * time.Millisecond)
-	//	}
-	//}()
-	//
-	//go func() {
-	//	for i := 0; i < 2; i++ {
-	//		for i := 0; i < fundedAccounts; i++ {
-	//			go func(idx int) {
-	//				fmt.Printf("starting index %d\n", idx)
-	//				err := sendEthToAddress(client2, testAccounts[idx][0], "100000", testAccounts[idx+1][1])
-	//				if err != nil {
-	//					fmt.Println(err)
-	//				}
-	//			}(i)
-	//		}
-	//		time.Sleep(200 * time.Millisecond)
-	//	}
-	//}()
-	//
-	//go func() {
-	//	for i := 0; i < 2; i++ {
-	//		for i := 0; i < fundedAccounts; i++ {
-	//			go func(idx int) {
-	//				fmt.Printf("starting index %d\n", idx)
-	//				err := sendEthToAddress(client2b, testAccounts[idx][0], "100000", testAccounts[idx+1][1])
-	//				if err != nil {
-	//					fmt.Println(err)
-	//				}
-	//			}(i)
-	//		}
-	//		time.Sleep(200 * time.Millisecond)
-	//	}
-	//}()
-
-	time.Sleep(20*time.Second)
+	time.Sleep(20 * time.Second)
 }

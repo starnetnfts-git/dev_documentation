@@ -64,7 +64,6 @@ func CleanUp() {
 	fmt.Printf("Parent Account %s has %s ETH\n", parentAddress, ethValue.String())
 
 	for k, tAddress := range testAccounts {
-		// 1000000000000000000000 = 1000 ETH
 		fmt.Printf("Current Index %d / %d\n", k, len(testAccounts))
 
 		balance, err := ethereum.GetWeiBalance(tAddress[0], ethereum.Client)

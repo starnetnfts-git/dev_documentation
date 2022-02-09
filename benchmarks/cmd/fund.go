@@ -37,7 +37,6 @@ func init() {
 }
 
 func fundTestAddresses() {
-
 	jsonFile, err := os.Open("./test_accounts.json")
 	if err != nil {
 		fmt.Println(err)
@@ -92,7 +91,7 @@ func fundTestAddresses() {
 	}
 
 	// verifying some the balances
-	for i := 0; i < 10; i=i+10 {
+	for i := 0; i < 10; i = i + 10 {
 		tAddress := testAccounts[i]
 		balance, err := ethereum.GetWeiBalance(tAddress[0], ethereum.Client)
 		if err != nil {
@@ -110,7 +109,6 @@ func fundTestAddresses() {
 }
 
 func sendEthToAddress(client *ethclient.Client, toAddress string, amountInWei string, senderPrivateKey string) error {
-
 	privateKey, err := crypto.HexToECDSA(senderPrivateKey[2:])
 	if err != nil {
 		return err
@@ -154,6 +152,5 @@ func sendEthToAddress(client *ethclient.Client, toAddress string, amountInWei st
 	}
 
 	log.Printf("sent %s wei from %s to %s -> %s\n", amountInWei, fromAddress.String(), toAddress, tx.Hash().String())
-	//time.Sleep(10 * time.Second)
 	return nil
 }

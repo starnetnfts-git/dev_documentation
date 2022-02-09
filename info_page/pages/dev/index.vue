@@ -6,6 +6,15 @@
   >
     <v-flex xs12 sm8 md6 class="metamask-info-template__row">
       <v-card elevation="0" class="mb-5 metamask-info-template__card">
+        <v-card-title>Arbitrum Developer Quickstart</v-card-title>
+        <v-card-text
+          >You can find a hardhat sample project
+          <a
+            target="_blank"
+            href="https://github.com/starnetnfts-official/dev_documentation/tree/main/mock_contracts"
+            >here</a
+          >
+        </v-card-text>
         <v-card-title>Hardhat Configuration</v-card-title>
         <v-card-text>
           <pre>
@@ -17,6 +26,10 @@ starnet: {
 	accounts: [process.env.PRIVATE_KEY],
 },
           </pre>
+          <p>
+            if needed, a websocket connection is available at
+            <strong>wss://rpc1.starnetnft.com/ws</strong>
+          </p>
         </v-card-text>
       </v-card>
 

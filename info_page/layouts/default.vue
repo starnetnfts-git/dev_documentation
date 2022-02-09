@@ -21,6 +21,7 @@
         <v-btn
           class="secondary ma-1 white--text"
           outlined
+          small
           @click="goToUrl('/')"
         >
           HOME
@@ -28,9 +29,18 @@
         <v-btn
           class="primary ma-1 white--text"
           outlined
-          @click="goToUrl('/dev/verifying')"
+          small
+          @click="goToUrl('/dev')"
         >
           Developer Info
+        </v-btn>
+        <v-btn
+          class="primary ma-1 white--text"
+          outlined
+          small
+          @click="goToUrl('/dev/node')"
+        >
+          Running a node
         </v-btn>
       </div>
     </v-app-bar>

@@ -51,7 +51,7 @@
 
           <v-card class="ma-5">
             <v-card-title class="grey white--text"
-              >For MainNet please use the following</v-card-title
+              >MainNet Configuration</v-card-title
             >
             <v-card-title>
               <p>
@@ -72,7 +72,7 @@
 
           <v-card class="ma-5">
             <v-card-title class="grey white--text"
-              >For TestNet please use the following</v-card-title
+              >TestNet Configuration</v-card-title
             >
             <v-card-title>
               <p>

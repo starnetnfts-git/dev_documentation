@@ -25,10 +25,18 @@ starnet: {
 	timeout: 99000,
 	accounts: [process.env.PRIVATE_KEY],
 },
+starnet_testnet: {
+	url: "https://rpc-testnet.starnetnft.com",
+	gas: 4500000,
+	gasPrice: 1000000000, //1 gwei
+	timeout: 99000,
+	accounts: [process.env.PRIVATE_KEY],
+},
           </pre>
           <p>
-            if needed, a websocket connection is available at
-            <strong>wss://rpc1.starnetnft.com/ws</strong>
+            if needed, a websocket connection is available at<br />
+            <strong>wss://rpc1.starnetnft.com/ws</strong> or
+            <strong> wss://rpc-testnet.starnetnft.com/ws</strong>
           </p>
         </v-card-text>
       </v-card>

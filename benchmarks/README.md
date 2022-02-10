@@ -109,15 +109,16 @@ The Rinkeby network has a current gas limit of around 7,000,000 per block and ro
 
 ### Final recommendation
 
-20,000,000 block limit for 3 seconds is a sensible choice...
+20,000,000 block limit for 3 seconds is the choice configuration for Star Net NFT Blockchain
 
-what happens if there are more than transactions at some point:
+#### What happens if there are more than transactions at some point ?
 
-- RPC nodes will buffer them
+- RPC nodes will buffer them. An RPC node usually can buffer 200-2000 transactions (depends on it's config)
 
 what happens if the RPC nodes are full and can't buffer more ?
 
-- wallet should retry them
+- unless there's an attack, I don't see this happening
+- the wallet should retry them or the system that send them should retry them
 
 what happens if both RPC nodes are full continuously
 

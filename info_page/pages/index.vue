@@ -50,6 +50,7 @@
           </p>
 
           <v-card class="ma-5">
+            <v-card-title>For MainNet please use the following</v-card-title>
             <v-card-title>
               <p>
                 <span style="font-weight: bold">Network Name:</span> Star Net
@@ -61,6 +62,24 @@
                 <br />
                 <span style="font-weight: bold">Block Explorer URL:</span>
                 https://starnetscan.com
+              </p>
+            </v-card-title>
+          </v-card>
+
+          <v-card class="ma-5">
+            <v-card-title>For TestNet please use the following</v-card-title>
+            <v-card-title>
+              <p>
+                <span style="font-weight: bold">Network Name:</span> Star Net
+                TestNet
+                <br />
+                <span style="font-weight: bold">New RPC URL:</span>
+                https://rpc-testnet.starnetnft.com
+                <br />
+                <span style="font-weight: bold">Chain ID:</span> 4445
+                <br />
+                <span style="font-weight: bold">Block Explorer URL:</span>
+                https://explorer-testnet.starnetscan.com
               </p>
             </v-card-title>
           </v-card>

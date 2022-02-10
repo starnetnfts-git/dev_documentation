@@ -38,6 +38,13 @@ starnet_testnet: {
             <strong>wss://rpc1.starnetnft.com/ws</strong> or
             <strong> wss://rpc-testnet.starnetnft.com/ws</strong>
           </p>
+
+          <p>
+            Requests some funds from the
+            <a target="_blank" href="https://testnet-faucet.starnetnft.com"
+              >testnet-faucet.starnetnft.com</a
+            >
+          </p>
         </v-card-text>
       </v-card>
 

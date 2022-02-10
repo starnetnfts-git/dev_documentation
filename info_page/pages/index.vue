@@ -107,6 +107,13 @@
             />
           </p>
 
+          <p class="ma-5 headline">
+            Requests some funds from the
+            <a target="_blank" href="https://testnet-faucet.starnetnft.com"
+              >testnet-faucet.starnetnft.com</a
+            >
+          </p>
+
           <p class="ma-5 body-1">
             With Star Net NFT set up in MetaMask, you’re free to start making
             transactions, collecting NFTs interacting with DeFi DApps, and

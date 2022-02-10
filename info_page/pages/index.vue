@@ -60,6 +60,8 @@
                 <br />
                 <span style="font-weight: bold">Chain ID:</span> 4444
                 <br />
+                <span style="font-weight: bold">Currency Symbol:</span> STAR
+                <br />
                 <span style="font-weight: bold">Block Explorer URL:</span>
                 https://starnetscan.com
               </p>
@@ -77,6 +79,8 @@
                 https://rpc-testnet.starnetnft.com
                 <br />
                 <span style="font-weight: bold">Chain ID:</span> 4445
+                <br />
+                <span style="font-weight: bold">Currency Symbol:</span> STAR
                 <br />
                 <span style="font-weight: bold">Block Explorer URL:</span>
                 https://explorer-testnet.starnetscan.com

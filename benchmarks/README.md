@@ -109,9 +109,9 @@ The Rinkeby network has a current gas limit of around 7,000,000 per block and ro
 
 ### Final recommendation
 
-10,000,000 block limit for 5 seconds is a sensible choice... giving 95 TPS
+20,000,000 block limit for 3 seconds is a sensible choice...
 
-what happens if there are more than 95\*5 transactions at some point:
+what happens if there are more than transactions at some point:
 
 - RPC nodes will buffer them
 
@@ -120,6 +120,10 @@ what happens if the RPC nodes are full and can't buffer more ?
 - wallet should retry them
 
 what happens if both RPC nodes are full continuously
+
+- transactions will stop until the previous transactions are mined. in this case the network price will increase
+
+what happens if someone ddoses the network
 
 - attacker should run out of ETH
 - the firewall before the official RPCs will block the IPs that flood the network

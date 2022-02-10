@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/home/me/workspace_web/dev_documentation/mock_contracts/contracts/ERC20Mock.sol": {
+    "/home/me/workspace_web/dev_documentation/example_contracts/contracts/ERC20Mock.sol": {
       "lastModificationDate": 1644344046716,
       "contentHash": "d9ba3210c801d1f1ea9c63d6965f420c",
       "sourceName": "contracts/ERC20Mock.sol",
@@ -44,7 +44,7 @@
         "IERC20Metadata"
       ]
     },
-    "/home/me/workspace_web/dev_documentation/mock_contracts/contracts/ERC721Mock.sol": {
+    "/home/me/workspace_web/dev_documentation/example_contracts/contracts/ERC721Mock.sol": {
       "lastModificationDate": 1644344447028,
       "contentHash": "e3210535aebf74fd1140ec86a61637cb",
       "sourceName": "contracts/ERC721Mock.sol",
@@ -99,6 +99,41 @@
         "IERC721Receiver",
         "Ownable",
         "Strings"
+      ]
+    },
+    "/home/me/workspace_web/dev_documentation/example_contracts/contracts/Simplest.sol": {
+      "lastModificationDate": 1644510845388,
+      "contentHash": "de5c5be81dc58515966aba0cab76f971",
+      "sourceName": "contracts/Simplest.sol",
+      "solcConfig": {
+        "version": "0.8.11",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.11"
+      ],
+      "artifacts": [
+        "Simplest"
       ]
     }
   }

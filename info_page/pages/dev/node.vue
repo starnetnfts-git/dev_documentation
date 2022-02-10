@@ -37,33 +37,6 @@
           <br />
           <br />
           In order to run a node you'll need our genesis.json file
-          <br /> <br />
-          <pre>
-{
-  "config" : {
-    "chainId" : 4444,
-    "muirglacierblock" : 0,
-    "ibft2" : {
-      "blockperiodseconds" : 3,
-      "epochlength" : 10000,
-      "requesttimeoutseconds" : 6
-    }
-  },
-  "nonce" : "0x0",
-  "timestamp" : "0x61EFEC19",
-  "gasLimit" : "0x1312D00",
-  "difficulty" : "0x1",
-  "mixHash" : "0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365",
-  "coinbase" : "0x0000000000000000000000000000000000000000",
-  "alloc" : {
-    "63E5Cf7d08595e7A92846c6d4B75892EC012325a" : {
-      "balance" : "100000000000000000000000000"
-    }
-  },
-  "extraData" : "0xf87ea00000000000000000000000000000000000000000000000000000000000000000f8549469f32789bf976f6211aac6efb71d4745bfd7c5cd943eecc7080522ea66391ee71e32dd8fa23b556550945b61eba48ab0d4812a0a76b67d2a229b3671608894c8b4db4094528dadf363d6fd40af726838fff4a4808400000000c0"
-}</pre
-          >
-          <br />
           <br />
           <p>and an enode URI that our team will give you. Please contact us for this information</p>
         </v-card-text>

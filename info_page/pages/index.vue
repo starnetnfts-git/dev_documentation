@@ -38,7 +38,7 @@
                 class="mt-3 mb-3 primary white--text"
                 outlined
                 @click="addStarentNFTChainToMetamask()"
-                >2. ADD STAR NET NFT TO METAMASK</v-btn
+                >2. ADD STAR NET MAINNET TO METAMASK</v-btn
               >
             </container>
           </p>
@@ -50,7 +50,9 @@
           </p>
 
           <v-card class="ma-5">
-            <v-card-title>For MainNet please use the following</v-card-title>
+            <v-card-title class="grey white--text"
+              >For MainNet please use the following</v-card-title
+            >
             <v-card-title>
               <p>
                 <span style="font-weight: bold">Network Name:</span> Star Net
@@ -69,7 +71,9 @@
           </v-card>
 
           <v-card class="ma-5">
-            <v-card-title>For TestNet please use the following</v-card-title>
+            <v-card-title class="grey white--text"
+              >For TestNet please use the following</v-card-title
+            >
             <v-card-title>
               <p>
                 <span style="font-weight: bold">Network Name:</span> Star Net
@@ -83,7 +87,7 @@
                 <span style="font-weight: bold">Currency Symbol:</span> STAR
                 <br />
                 <span style="font-weight: bold">Block Explorer URL:</span>
-                https://explorer-testnet.starnetscan.com
+                https://testnet.starnetscan.com
               </p>
             </v-card-title>
           </v-card>
@@ -98,8 +102,8 @@
               alt="starnetnft explanation 2"
             />
             <img
-              src="/images/starnetnft_explanations/3.png"
-              alt="starnetnft explanation 3"
+              src="/images/starnetnft_explanations/3b.png"
+              alt="starnetnft explanation 3b"
             />
           </p>
 
@@ -160,7 +164,6 @@
 
 <script>
 import { ethers } from 'ethers'
-import { RPC_PROVIDER, NETWORK_ID } from '../constants'
 const EthersUtils = require('ethers').utils
 
 export default {
@@ -212,6 +215,30 @@ export default {
               },
               rpcUrls: ['https://rpc1.starnetnft.com'],
               blockExplorerUrls: ['https://starnetscan.com'],
+              iconUrls: [],
+            },
+          ],
+        })
+      } else {
+        this.$router.push('/other/install_metamask')
+      }
+    },
+    async addStarentNFTTestnetChainToMetamask() {
+      console.log('adding starnetnft to metamask...')
+      if (window.ethereum) {
+        await window.ethereum.request({
+          method: 'wallet_addEthereumChain',
+          params: [
+            {
+              chainId: '0x115D',
+              chainName: 'Star Net TestNet',
+              nativeCurrency: {
+                name: 'STAR',
+                symbol: 'STAR',
+                decimals: 18,
+              },
+              rpcUrls: ['https://rpc-testnet.starnetnft.com'],
+              blockExplorerUrls: ['https://testnet.starnetscan.com'],
               iconUrls: [],
             },
           ],

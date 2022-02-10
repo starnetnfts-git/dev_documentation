@@ -32,7 +32,14 @@ module.exports = {
 			blockGasLimit: 10000000,
 		},
 		starnet: {
-			url: process.env.STARNET_RPC,
+			url: "https://rpc1.starnetnft.com",
+			gas: 4500000,
+			gasPrice: 1000000000, //1 gwei
+			timeout: 99000,
+			accounts: [process.env.PRIVATE_KEY],
+		},
+		starnet_testnet: {
+			url: "https://rpc-testnet.starnetnft.com",
 			gas: 4500000,
 			gasPrice: 1000000000, //1 gwei
 			timeout: 99000,

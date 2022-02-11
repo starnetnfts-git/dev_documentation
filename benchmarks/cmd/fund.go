@@ -1,5 +1,7 @@
 package cmd
 
+//normally a smart contract multisend would make sending MUCH faster....
+
 import (
 	"context"
 	"crypto/ecdsa"
@@ -78,7 +80,7 @@ func fundTestAddresses() {
 	}
 
 	totalAccounts := 1000
-	weiToSend := "300000000000000" // 0.0003
+	weiToSend := "1000000000000000" // 0.001
 
 	for i := 0; i < totalAccounts; i++ {
 		tAddress := testAccounts[i]

@@ -1,5 +1,11 @@
 # Star Net NFT Blockchain Benchmarks
 
+## Build & Run
+
+the most optimal way to run this benchmark is using the following approach 
+
+![explanation]("./other/benchmark-explanation.png)
+
 ### TL/DR;
 
 With a firewall, max per IP is ~60 TPS

@@ -183,6 +183,7 @@ The app uses webpack to compile scss to actual css files, from the root blocksco
 the below command in terminal. It may take time
 
 ```
+systemctl stop blockscout
 cd apps/block_scout_web/assets; npm install &&
 node_modules/webpack/bin/webpack.js --mode production; cd -
 ```
@@ -198,3 +199,42 @@ mix phx.digest
 blockscout/apps/block_scout_web/priv/gettext/en/LC_MESSAGES/default.po
 In the above find the below line and change the “msgstr” to “Star” to
 update the symbol across the application
+
+### Regenerating Static Assets (working Folder is blockscout)
+
+Stop the service
+
+```
+systemctl stop blockscout
+```
+
+Delete existing static assets
+
+```
+mix phx.digest.clean
+```
+
+Make your css changes and run the below command to generate css from scss files
+
+```
+cd apps/block_scout_web/assets; npm install &&
+node_modules/webpack/bin/webpack.js --mode production; cd -
+```
+
+Generate static assets using below command
+
+```
+mix phx.digest
+```
+
+Start the service
+
+```
+systemctl start blockscout
+```
+
+Repeat for the changes.
+
+.dashboard-banner-network-graph
+
+display: none

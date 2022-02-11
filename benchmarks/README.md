@@ -4,7 +4,7 @@
 
 the most optimal way to run this benchmark is using the following approach 
 
-![explanation]("./other/benchmark-explanation.png")
+![explanation]("/other/benchmark-explanation.png")
 
 ### TL/DR;
 

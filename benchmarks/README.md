@@ -6,6 +6,53 @@ the most optimal way to run this benchmark is using the following approach
 
 <img src="https://raw.githubusercontent.com/starnetnfts-official/dev_documentation/main/benchmarks/other/benchmark-explanation.png" alt="benchmark explanation" />
 
+- You need to setup the RPC connection to the blockchain without passing any firewall otherwise you'll be blocked
+
+~~~~
+RPC_URL1="http://xxxxxxxxx:8545"
+RPC_URL2="ws://xxxxxxxxxxxx:8546"
+RPC_URL3="http://xxxxxxxxxx:8545"
+RPC_URL4="http://xxxxxxxx:8545"
+
+PARENT_ADDRESS="0x00000000000000000000"
+PARENT_PRIVATE_KEY="0x0000000000000000000000000000000000000"
+PARENT_PRIVATE_KEY2="0x0000000000000000000000000000000000000"
+BLOCK_INTERVAL=3
+GAS_PRICE_WEI=1000000000
+CHAIN_ID=4445
+~~~~
+
+- Setup 4 RPC Nodes. You can use ws connection instead of https
+- Parent Address is the address where the funds after the benchmark that weren't use collect
+- Parent private keys are 2 private keys of accounts funded with some eth (eg: 10 STAR) to fund the test accounts
+
+Clone this repo, make sure it build
+
+~~~~
+git clone git@github.com:starnetnfts-official/dev_documentation.git
+cd dev_documentation/benchmarks
+go get -d ./...
+go run .
+~~~~
+
+Step #1: add funds to the test accounts
+
+go run . fund
+
+Step #2: run your desired benchmark. eg
+
+go run . eth
+
+Step #3: collect back the funds from test accounts
+
+go run . cleanup
+
+Attention: some things are hardcoded in the code, eg: test contracts for erc20/erc721/simple. If you do it on a new chain those contracts
+need to be republished and their address changed.
+
+Checkout the "example_contracts" folder in "dev_documentation"
+
+
 ### TL/DR;
 
 With a firewall, max per IP is ~60 TPS

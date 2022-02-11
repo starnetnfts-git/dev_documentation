@@ -4,7 +4,7 @@
 
 the most optimal way to run this benchmark is using the following approach 
 
-![explanation]("../other/benchmark-explanation.png")
+![explanation]("https://raw.githubusercontent.com/starnetnfts-official/dev_documentation/main/benchmarks/other/benchmark-explanation.png")
 
 ### TL/DR;
 

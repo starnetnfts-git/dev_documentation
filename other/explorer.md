@@ -217,14 +217,23 @@ mix phx.digest.clean
 Make your css changes and run the below command to generate css from scss files
 
 ```
-cd apps/block_scout_web/assets; npm install &&
-node_modules/webpack/bin/webpack.js --mode production; cd -
+cd /var/www/blockscout/apps/block_scout_web/assets/css
+```
+
+Search what you want to change using github search
+
+https://github.com/blockscout/blockscout/tree/master/apps/block_scout_web/assets/css/components
+
+```
+cd /var/www/blockscout/apps/block_scout_web/assets; npm install &&
+node_modules/webpack/bin/webpack.js --mode production;
+
 ```
 
 Generate static assets using below command
 
 ```
-mix phx.digest
+cd /var/www/blockscout/; mix phx.digest
 ```
 
 Start the service
@@ -234,6 +243,10 @@ systemctl start blockscout
 ```
 
 Repeat for the changes.
+
+## List of css changes
+
+main-page.css
 
 .dashboard-banner-network-graph
 

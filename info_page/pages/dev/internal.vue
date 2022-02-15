@@ -83,7 +83,7 @@ HOT_WALLET_PRIVATE_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX
       <v-card elevation="0" class="mt-5 metamask-info-template__card">
         <v-card-text>
           <pre>
-# STARNET CONFIGURATIONS
+// STARNET CONFIGURATIONS
 export const RPC_STARNET_HTTP="https://rpc-testnet.starnetnft.com"
 export const CHAIN_ID_STARNET="4445"
 export const CHAIN_ID_HEX_STARNET = "0x115d"
@@ -91,8 +91,8 @@ export const BRIDGE_STARNET="0x9Eb759db64A3C5E8F2bE42f17dB1E566dFfcc30a"
 export const MULTISEND_STARNET="0x8523E9194788C7F4a4e00b7945FA0c29FA9D7c3D"
 export const RECEIVER_STARNET="0xf7144d94BAc0F1593b8166Fb71C448469eF6e261"
 export const EXPLORER_URI_STARNET="https://testnet.starnetscan.com"
-# PARTNER CONFIGURATIONS
-export const PARTNER_NAME="arbitrum_testnet"
+// PARTNER CONFIGURATIONS
+export const PARTNER_NAME="Arbitrum Testnet"
 export const RPC_PARTNER_HTTP="https://rinkeby.arbitrum.io/rpc"
 export const CHAIN_ID_PARTNER="421611"
 export const CHAIN_ID_HEX_PARTNER="0x66eeb"

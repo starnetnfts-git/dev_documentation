@@ -4,7 +4,7 @@
       <v-flex xs12 sm8 md6 class="metamask-info-template__row">
         <div>
           <p class="display-1">
-            <span class="underline">Star Net NFT</span> Blockchain
+            <span class="underline">Star Net</span> Blockchain
           </p>
 
           <p class="mt-5 title">Connect to the blockchain</p>

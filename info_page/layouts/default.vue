@@ -10,8 +10,8 @@
       <v-toolbar-title>
         <nuxt-link style="text-decoration: none" to="/">
           <img
-            src="https://starnetscan.com/images/k_logo.png"
-            style="max-height: 70px"
+            src="https://info.starnetnft.com/logo/starnet_logo_white.svg"
+            style="height: 40px"
             alt="starnet nft"
           />
         </nuxt-link>

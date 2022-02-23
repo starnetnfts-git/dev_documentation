@@ -11,7 +11,7 @@
           >You can find a hardhat sample project
           <a
             target="_blank"
-            href="https://github.com/starnetnfts-official/dev_documentation/tree/main/mock_contracts"
+            href="https://github.com/starnetnfts-official/dev_documentation/tree/main/example_contracts"
             >here</a
           >
         </v-card-text>

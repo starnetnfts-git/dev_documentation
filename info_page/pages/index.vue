@@ -11,8 +11,8 @@
             STAR (ERC20) Ethereum Mainnet
             <a
               target="_blank"
-              href="https://etherscan.io/token/0xfDc1FAD90B50bB6c0C7da6Dfe0D93b00DCE44eDA"
-              >0xfDc1FAD90B50bB6c0C7da6Dfe0D93b00DCE44eDA</a
+              href="https://etherscan.io/token/0x6FBC8ef842Dc6c346859350eE3c626242B09B896"
+              >0x6FBC8ef842Dc6c346859350eE3c626242B09B896</a
             >
           </p>
 

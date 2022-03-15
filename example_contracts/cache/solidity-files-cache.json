@@ -2,11 +2,11 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/me/workspace_web/dev_documentation/example_contracts/contracts/ERC20Mock.sol": {
-      "lastModificationDate": 1644344046716,
-      "contentHash": "d9ba3210c801d1f1ea9c63d6965f420c",
+      "lastModificationDate": 1646035761435,
+      "contentHash": "9e7755641c949a1e2883ce15e4f69c17",
       "sourceName": "contracts/ERC20Mock.sol",
       "solcConfig": {
-        "version": "0.8.11",
+        "version": "0.8.12",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -34,7 +34,7 @@
         "^0.8.0",
         "^0.8.0",
         "^0.8.0",
-        "0.8.11"
+        "0.8.12"
       ],
       "artifacts": [
         "Context",
@@ -45,11 +45,11 @@
       ]
     },
     "/home/me/workspace_web/dev_documentation/example_contracts/contracts/ERC721Mock.sol": {
-      "lastModificationDate": 1644344447028,
-      "contentHash": "e3210535aebf74fd1140ec86a61637cb",
+      "lastModificationDate": 1646035769235,
+      "contentHash": "b0b4ca975d34717d92f80f7ec3b87dd3",
       "sourceName": "contracts/ERC721Mock.sol",
       "solcConfig": {
-        "version": "0.8.11",
+        "version": "0.8.12",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -84,7 +84,7 @@
         "^0.8.0",
         "^0.8.0",
         "^0.8.11",
-        "^0.8.11"
+        "0.8.12"
       ],
       "artifacts": [
         "Address",
@@ -101,12 +101,12 @@
         "Strings"
       ]
     },
-    "/home/me/workspace_web/dev_documentation/example_contracts/contracts/Simplest.sol": {
-      "lastModificationDate": 1644510845388,
-      "contentHash": "de5c5be81dc58515966aba0cab76f971",
-      "sourceName": "contracts/Simplest.sol",
+    "/home/me/workspace_web/dev_documentation/example_contracts/contracts/MetaboxNFTToken.sol": {
+      "lastModificationDate": 1646158407773,
+      "contentHash": "d24a636a493cbad24578d89d75fe03ab",
+      "sourceName": "contracts/MetaboxNFTToken.sol",
       "solcConfig": {
-        "version": "0.8.11",
+        "version": "0.8.12",
         "settings": {
           "optimizer": {
             "enabled": true,
@@ -130,7 +130,81 @@
       },
       "imports": [],
       "versionPragmas": [
-        "0.8.11"
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0",
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl",
+        "AccessControlEnumerable",
+        "Address",
+        "Context",
+        "ERC165",
+        "ERC721",
+        "ERC721Burnable",
+        "ERC721Enumerable",
+        "ERC721Pausable",
+        "ERC721URIStorage",
+        "EnumerableSet",
+        "IAccessControl",
+        "IAccessControlEnumerable",
+        "IERC165",
+        "IERC721",
+        "IERC721Enumerable",
+        "IERC721Metadata",
+        "IERC721Receiver",
+        "MetaboxNFTToken",
+        "Ownable",
+        "Pausable",
+        "Strings"
+      ]
+    },
+    "/home/me/workspace_web/dev_documentation/example_contracts/contracts/Simplest.sol": {
+      "lastModificationDate": 1646151301263,
+      "contentHash": "50a1185390af9381b3eb318aa6b9ad0f",
+      "sourceName": "contracts/Simplest.sol",
+      "solcConfig": {
+        "version": "0.8.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.12"
       ],
       "artifacts": [
         "Simplest"

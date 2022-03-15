@@ -24,12 +24,6 @@ async function main() {
 	const TContract = await hre.ethers.getContractFactory("Simplest")
 	console.log("Deploying Simplest Contract...")
 
-	// const TContract = await hre.ethers.getContractFactory("ERC20Mock")
-	// console.log("Deploying ERC20Mock Contract...")
-
-	// const TContract = await hre.ethers.getContractFactory("ERC721Mock")
-	// console.log("Deploying ERC721Mock Contract...")
-
 	const deployed = await TContract.deploy()
 	let dep = await deployed.deployed()
 	console.log("Contract deployed to:", dep.address)

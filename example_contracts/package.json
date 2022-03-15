@@ -10,7 +10,10 @@
 		"testGas": "REPORT_GAS=true npx hardhat test --network ganache",
 		"prettier": "prettier --write 'contracts/**/*.sol'",
 		"deploy:ganache": "NETWORK=ganache npx hardhat run --network ganache scripts/deploy.js",
-		"deploy:starnet": "NETWORK=starnet npx hardhat run --network starnet scripts/deploy.js"
+		"deploy:starnet": "NETWORK=starnet npx hardhat run --network starnet scripts/deploy.js",
+		"deploy:starnet_testnet": "NETWORK=starnet_testnet npx hardhat run --network starnet_testnet scripts/deploy.js",
+		"deploy_metabox:starnet": "NETWORK=starnet npx hardhat run --network starnet scripts/deploy_metabox.js",
+		"deploy_metabox:starnet_testnet": "NETWORK=starnet_testnet npx hardhat run --network starnet_testnet scripts/deploy_metabox.js"
 	},
 	"author": "https://starnetnft.com",
 	"license": "MIT",

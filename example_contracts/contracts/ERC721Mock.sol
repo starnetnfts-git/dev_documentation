@@ -1226,7 +1226,7 @@ contract ERC721A is Context, ERC165, IERC721, IERC721Metadata, IERC721Enumerable
 // File contracts/ERC721Mock.sol
 
 
-pragma solidity ^0.8.11;
+pragma solidity 0.8.12;
 
 
 //Mock ERC721, anyone can mint!

@@ -506,7 +506,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 // File contracts/ERC20Mock.sol
 
 
-pragma solidity 0.8.11;
+pragma solidity 0.8.12;
 
 contract ERC20Mock is ERC20 {
 	constructor() ERC20("ERC20", "USDC") {

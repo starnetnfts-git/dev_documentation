@@ -10,7 +10,7 @@
       <v-toolbar-title>
         <nuxt-link style="text-decoration: none" to="/">
           <img
-            src="https://info.starnetnft.com/logo/starnet_logo_white.svg"
+            src="https://info.starnetnft.com/logo/logo_starnet.png"
             style="height: 40px"
             alt="starnet nft"
           />

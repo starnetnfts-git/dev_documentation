@@ -4,7 +4,7 @@
       <v-flex xs12 sm8 md6 class="metamask-info-template__row">
         <div>
           <p class="display-1">
-            <span class="underline">Star Net</span> Blockchain
+            <span class="underline">STAR Net</span> Blockchain
           </p>
 
           <p class="mt-5 title">
@@ -18,11 +18,11 @@
 
           <p class="mt-5 title">Connect to the blockchain</p>
           <p class="body">
-            Interacting with the Star Net NFT blockchain requires a compatible
+            Interacting with the STAR Net NFT blockchain requires a compatible
             crypto wallet such as
             <a target="_blank" href="https://metamask.io/">MetaMask</a>.
-            However, MetaMask doesn’t have Star Net NFT added as a network by
-            default. Setting up your browser wallet to connect to Star Net NFT
+            However, MetaMask doesn’t have STAR Net NFT added as a network by
+            default. Setting up your browser wallet to connect to STAR Net NFT
             is simple and can be done in just a few minutes.
           </p>
           <p class="mt-5 body">
@@ -47,7 +47,7 @@
                 class="mt-3 mb-3 primary white--text"
                 outlined
                 @click="addStarentNFTChainToMetamask()"
-                >2. ADD STAR NET MAINNET TO METAMASK</v-btn
+                >2. ADD STAR Net MAINNET TO METAMASK</v-btn
               >
             </container>
           </p>
@@ -64,7 +64,7 @@
             >
             <v-card-title>
               <p>
-                <span style="font-weight: bold">Network Name:</span> Star Net
+                <span style="font-weight: bold">Network Name:</span> STAR Net
                 <br />
                 <span style="font-weight: bold">New RPC URL:</span>
                 https://rpc1.starnetnft.com
@@ -85,7 +85,7 @@
             >
             <v-card-title>
               <p>
-                <span style="font-weight: bold">Network Name:</span> Star Net
+                <span style="font-weight: bold">Network Name:</span> STAR Net
                 TestNet
                 <br />
                 <span style="font-weight: bold">New RPC URL:</span>
@@ -124,7 +124,7 @@
           </p>
 
           <p class="ma-5 body-1">
-            With Star Net NFT set up in MetaMask, you’re free to start making
+            With STAR Net NFT set up in MetaMask, you’re free to start making
             transactions, collecting NFTs interacting with DeFi DApps, and
             managing your crypto.
           </p>

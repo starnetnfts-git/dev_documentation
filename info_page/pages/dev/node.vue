@@ -7,7 +7,7 @@
     <v-flex xs12 sm8 md6 class="metamask-info-template__row">
       <v-card elevation="0" class="mb-5 metamask-info-template__card">
         <v-card-title
-          >Running full node for Star Net NFT Blockchain</v-card-title
+          >Running full node for STAR Net NFT Blockchain</v-card-title
         >
         <v-card-text>Prerequisites: Java JDK (11-16)</v-card-text>
         <v-card-title>Linux / Unix</v-card-title>

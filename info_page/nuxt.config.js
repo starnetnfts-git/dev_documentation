@@ -15,22 +15,22 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: 'Start Net NFT Info Page',
-    title: 'Start Net NFT Info Page',
+    titleTemplate: 'STAR Net Info Page',
+    title: 'STAR Net Info Page',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Start Net NFT Info Page',
+        content: 'STAR Net Info Page',
       },
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: 'https://starnetscan.com/images/k_logo.png',
+        href: 'https://info.starnetnft.com/logo/just_star.png',
       },
     ],
   },
